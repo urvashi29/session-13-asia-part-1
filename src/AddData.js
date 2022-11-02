@@ -20,11 +20,10 @@ export const AddData = () => {
     // to update atom
     const addData = () => {
         if (inputValue) {
-            setAtomData((list) => [
-                ...list, {
-                    id: getId(),
-                    text: inputValue,
-                }
+            setAtomData((list) => [...list, {
+                id: getId(),
+                text: inputValue,
+            }
             ]);
             setInputValue('');
 
